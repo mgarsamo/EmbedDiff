@@ -1,14 +1,25 @@
-# 🧬 EmbedDiff: Latent Diffusion for Protein Sequence Generation
+# 🧬 EmbedDiff: Latent Diffusion for Biologically Plausible Protein Design
 
-**EmbedDiff** is a protein sequence generation pipeline that combines large-scale pretrained protein embeddings with a latent diffusion model to explore and sample from the vast protein sequence space. It generates novel sequences that preserve semantic and evolutionary properties without relying on explicit structural data, and evaluates them through a suite of biologically meaningful analyses.
+**EmbedDiff** is a modular pipeline for **de novo protein sequence generation** that combines pretrained ESM2 embeddings, a latent diffusion model, and Transformer-based decoding. It enables efficient exploration of the protein sequence landscape—generating novel sequences that preserve **evolutionary plausibility**, **functional diversity**, and **foldability**, without requiring structural supervision.
 
+📈 Used in protein design pipelines to prioritize variants, simulate unseen sequences, and benchmark generative quality via identity, entropy, and structure.
 ---
 
 ## 🔍 What Is EmbedDiff?
 
-EmbedDiff uses ESM2 (Evolutionary Scale Modeling v2) to project protein sequences into a high-dimensional latent space rich in evolutionary and functional priors. A denoising latent diffusion model is trained to learn the distribution of these embeddings and generate new ones from random noise. These latent vectors represent plausible protein-like states and are decoded into sequences using a Transformer decoder that blends both stochastic and reference-guided sampling.
+## 🔍 What Is EmbedDiff?
 
-The pipeline concludes with sequence validation via entropy, cosine similarity, BLAST alignment, and embedding visualization (t-SNE, MDS). A final HTML report presents all figures and results in an interactive format.
+**EmbedDiff** is a generative machine learning pipeline for de novo protein design that combines powerful pretrained embeddings with a latent diffusion model and Transformer decoding.
+
+It starts by embedding natural protein sequences using [**ESM2**](https://github.com/facebookresearch/esm), which maps each sequence into a high-dimensional vector that encodes rich evolutionary, functional, and structural priors. These embeddings serve as a biologically grounded latent space. A **denoising diffusion model** is then trained directly on these ESM2 embeddings. During training, Gaussian noise is added to the embeddings across a series of timesteps, and the model learns to reverse this corruption—effectively modeling the distribution of natural protein embeddings. This enables EmbedDiff to sample entirely new latent vectors from noise that remain within the manifold of plausible protein sequences. These synthetic embeddings are decoded into amino acid sequences using a Transformer model, which supports both stochastic sampling and optional reference-guided decoding. The resulting sequences are novel yet biologically grounded. The pipeline concludes with comprehensive validation and visualization, including:
+
+- **Shannon entropy filtering** to assess compositional diversity
+- **BLAST alignment** against SwissProt to measure sequence novelty and identity
+- **Cosine similarity** comparisons in latent space
+- **t-SNE and MDS** plots for embedding visualization
+- **Optional structural assessment** using [**ESMFold**](https://github.com/facebookresearch/esm) to predict 3D folds and per-residue confidence (pLDDT)
+
+All results are compiled into an interactive **HTML summary report** for easy inspection and sharing.
 
 ---
 
