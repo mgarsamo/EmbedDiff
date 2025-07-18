@@ -2,11 +2,6 @@
 
 **EmbedDiff** is a modular pipeline for **de novo protein sequence generation** that combines pretrained ESM2 embeddings, a latent diffusion model, and Transformer-based decoding. It enables efficient exploration of the protein sequence landscape—generating novel sequences that preserve **evolutionary plausibility**, **functional diversity**, and **foldability**, without requiring structural supervision.
 
-📈 Used in protein design pipelines to prioritize variants, simulate unseen sequences, and benchmark generative quality via identity, entropy, and structure.
----
-
-## 🔍 What Is EmbedDiff?
-
 ## 🔍 What Is EmbedDiff?
 
 **EmbedDiff** is a generative machine learning pipeline for de novo protein design that combines powerful pretrained embeddings with a latent diffusion model and Transformer decoding.
