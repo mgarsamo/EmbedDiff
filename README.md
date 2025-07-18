@@ -169,14 +169,10 @@ Although not part of the core EmbedDiff pipeline, the generated sequences can op
 
 ## 🚀 Quick Start
 
-To run the entire EmbedDiff pipeline from end to end:
-
-```bash
-python run_embeddiff_pipeline.py 
+To run the entire EmbedDiff pipeline from end to end: python run_embeddiff_pipeline.py 
 
 
 ---
-
 #### 🧯 Output from Structural Prediction Tools
 - **3D Models** (`.pdb`) for each sequence.
 - **Confidence Scores** (e.g. `pLDDT` or `PAE`) per residue.
@@ -187,6 +183,11 @@ python run_embeddiff_pipeline.py
 ---
 
 > 📌 These tools provide additional confidence that the generated sequences are likely to fold into stable and ordered protein structures.
+
+
+## 🙏 Citation & Acknowledgment
+
+If you use **EmbedDiff** in your research or development, please consider [starring the repo ⭐](https://github.com/mgarsamo/EmbedDiff) and linking back to it. Citations and backlinks help others find and trust this work.
 
 ---
 
@@ -246,8 +247,3 @@ EmbedDiff/
     ├── embeddiff_mlp.pth
     └── decoder_transformer_best.pth
 
-## 🙏 Citation & Acknowledgment
-
-If you use **EmbedDiff** in your research or development, please consider [starring the repo ⭐](https://github.com/mgarsamo/EmbedDiff) and linking back to it. Citations and backlinks help others find and trust this work.
-
-BibTeX and citation format coming soon!
