@@ -3,10 +3,9 @@ EmbedDiff is a deep learning pipeline for de novo protein design using latent di
 -->
 # 🧬 EmbedDiff: Latent Diffusion Pipeline for De Novo Protein Sequence Generation
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Run EmbedDiff](https://img.shields.io/badge/🚀-Run%20Pipeline-blue)](#-quick-start-1-liner)
 [![HTML Report](https://img.shields.io/badge/View%20Report-📊-orange)](https://mgarsamo.github.io/EmbedDiff/embeddiff_summary_report.html)
-
+[![Run EmbedDiff](https://img.shields.io/badge/🚀-Run%20Pipeline-blue)](#-quick-start-1-liner)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **EmbedDiff** is a modular pipeline for **de novo protein sequence generation** that combines pretrained ESM2 embeddings, a latent diffusion model, and Transformer-based decoding. It enables efficient exploration of the protein sequence landscape—generating novel sequences that preserve **evolutionary plausibility**, **functional diversity**, and **foldability**, without requiring structural supervision.
 
@@ -192,9 +191,7 @@ Although not part of the core EmbedDiff pipeline, the generated sequences can op
 > 📌 These tools provide additional confidence that the generated sequences are likely to fold into stable and ordered protein structures.
 
 
-## 🙏 Citation & Acknowledgment
 
-If you use **EmbedDiff** in your research or development, please consider [starring the repo ⭐](https://github.com/mgarsamo/EmbedDiff) and linking back to it. Citations and backlinks help others find and trust this work.
 
 ---
 
@@ -254,3 +251,7 @@ EmbedDiff/
     ├── embeddiff_mlp.pth
     └── decoder_transformer_best.pth
 
+
+## 🙏 Citation & Acknowledgment
+
+If you use **EmbedDiff** in your research or development, please consider [starring the repo ⭐](https://github.com/mgarsamo/EmbedDiff) and linking back to it. Citations and backlinks help others find and trust this work.
