@@ -1,4 +1,9 @@
-# 🧬 EmbedDiff: Latent Diffusion for Biologically Plausible Protein Design
+<!--
+EmbedDiff is a deep learning pipeline for de novo protein design using latent diffusion models and ESM2 embeddings. It generates novel, biologically plausible protein sequences and includes decoding, BLAST validation, entropy filtering, and structure prediction using ESMFold or AlphaFold2. Ideal for machine learning in bioinformatics, protein engineering, and generative biology.
+-->
+
+# 🧬 EmbedDiff: Latent Diffusion Pipeline for Biologically Plausible Protein  Generation 
+
 
 **EmbedDiff** is a modular pipeline for **de novo protein sequence generation** that combines pretrained ESM2 embeddings, a latent diffusion model, and Transformer-based decoding. It enables efficient exploration of the protein sequence landscape—generating novel sequences that preserve **evolutionary plausibility**, **functional diversity**, and **foldability**, without requiring structural supervision.
 
