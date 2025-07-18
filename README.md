@@ -3,7 +3,22 @@ EmbedDiff is a deep learning pipeline for de novo protein design using latent di
 -->
 # 🧬 EmbedDiff: Latent Diffusion Pipeline for De Novo Protein Sequence Generation
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Run EmbedDiff](https://img.shields.io/badge/🚀-Run%20Pipeline-blue)](#-quick-start-1-liner)
+[![HTML Report](https://img.shields.io/badge/View%20Report-📊-orange)](figures/embeddiff_summary_report.html)
+
+
 **EmbedDiff** is a modular pipeline for **de novo protein sequence generation** that combines pretrained ESM2 embeddings, a latent diffusion model, and Transformer-based decoding. It enables efficient exploration of the protein sequence landscape—generating novel sequences that preserve **evolutionary plausibility**, **functional diversity**, and **foldability**, without requiring structural supervision.
+
+---
+
+## 🚀 Quick Start (1-liner)
+
+To run the entire EmbedDiff pipeline from end to end:
+
+```bash
+python run_embeddiff_pipeline.py
+```
 
 ## 🔍 What Is EmbedDiff?
 
@@ -20,9 +35,6 @@ It starts by embedding natural protein sequences using [**ESM2**](https://github
 All results are compiled into an interactive **HTML summary report** for easy inspection and sharing.
 
 ---
-## 🚀 Quick Start
-
-To run the entire EmbedDiff pipeline from end to end: python run_embeddiff_pipeline.py 
 
 ## 📌 Pipeline Overview
 
@@ -190,7 +202,7 @@ If you use **EmbedDiff** in your research or development, please consider [starr
 EmbedDiff/
 ├── README.md                       # 📘 Project overview and documentation
 ├── .gitignore                     # 🛑 Files/folders to exclude from version control
-├── master.py                      # 🧠 Master pipeline script to run all steps
+├── run_embeddiff_pipeline.py      # 🧠 Master pipeline script to run all steps
 ├── requirements.txt               # 📦 Python dependencies for setting up environment
 ├── environment.yml                # (Optional) Conda environment file (if using Conda)
 │
