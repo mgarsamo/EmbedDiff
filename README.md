@@ -20,6 +20,9 @@ It starts by embedding natural protein sequences using [**ESM2**](https://github
 All results are compiled into an interactive **HTML summary report** for easy inspection and sharing.
 
 ---
+## 🚀 Quick Start
+
+To run the entire EmbedDiff pipeline from end to end: python run_embeddiff_pipeline.py 
 
 ## 📌 Pipeline Overview
 
@@ -164,14 +167,6 @@ Although not part of the core EmbedDiff pipeline, the generated sequences can op
 - The state-of-the-art method from DeepMind for protein structure prediction.
 - Provides highly accurate structural models and can be run locally or via cloud platforms.
 - More computationally intensive, but offers best-in-class accuracy.
-
----
-
-## 🚀 Quick Start
-
-To run the entire EmbedDiff pipeline from end to end: python run_embeddiff_pipeline.py 
-
-
 ---
 #### 🧯 Output from Structural Prediction Tools
 - **3D Models** (`.pdb`) for each sequence.
