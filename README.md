@@ -21,7 +21,7 @@ python run_embeddiff_pipeline.py
 
 ## 🔍 What Is EmbedDiff?
 
-**EmbedDiff** is a generative machine learning pipeline for de novo protein design that combines powerful pretrained embeddings with a latent diffusion model and Transformer decoding.
+**EmbedDiff** is a generative machine learning pipeline for de novo protein design that combines powerful pretrained embeddings with a latent diffusion model and Transformer-based decoding.
 
 It starts by embedding natural protein sequences using [**ESM2**](https://github.com/facebookresearch/esm), which maps each sequence into a high-dimensional vector that encodes rich evolutionary, functional, and structural priors. These embeddings serve as a biologically grounded latent space. A **denoising diffusion model** is then trained directly on these ESM2 embeddings. During training, Gaussian noise is added to the embeddings across a series of timesteps, and the model learns to reverse this corruption—effectively modeling the distribution of natural protein embeddings. This enables EmbedDiff to sample entirely new latent vectors from noise that remain within the manifold of plausible protein sequences. These synthetic embeddings are decoded into amino acid sequences using a Transformer model, which supports both stochastic sampling and optional reference-guided decoding. The resulting sequences are novel yet biologically grounded. The pipeline concludes with comprehensive validation and visualization, including:
 
@@ -77,7 +77,7 @@ The full EmbedDiff pipeline is modular and proceeds through the following stages
 
 ---
 
-### **Step 5b: Train Transformer Decoder**
+### **Step 5b: Train Transformer-based Decoder**
 - A Transformer model is trained to autoregressively generate amino acid sequences from input embeddings.
 - Label smoothing and entropy filtering are used to improve sequence diversity and biological plausibility.
 - Optionally, ESM2 logit distillation is applied to align predictions with natural residue distributions.
@@ -241,7 +241,7 @@ EmbedDiff/
 │
 ├── models/                       # 📁 ML model architectures
 │   ├── diffusion_mlp.py                  # EmbedDiff diffusion model
-│   └── decoder_transformer.py           # Transformer decoder
+│   └── decoder_transformer.py           # Transformer-based decoder
 │
 ├── utils/                        # 📁 Utility and helper functions
 │   ├── amino_acid_utils.py               # Mapping functions for sequences
