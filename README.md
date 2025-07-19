@@ -39,17 +39,6 @@ All results are compiled into an interactive **HTML summary report** for easy in
 
 The full EmbedDiff pipeline is modular and proceeds through the following stages:
 
-<table>
-  <tr>
-    <td><img src="figures/fig1_overview.png" width="400"/></td>
-    <td><img src="figures/fig2_evaluation.png" width="400"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Fig 1. EmbedDiff Overview</b></td>
-    <td align="center"><b>Fig 2. Evaluation Pipeline</b></td>
-  </tr>
-</table>
-
 ### **Step 1: Input Dataset**
 - Format: A curated FASTA file of real protein sequences (e.g., Thioredoxin reductases).
 - Used as the basis for learning a latent protein representation and decoder training.
