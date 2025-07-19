@@ -3,7 +3,7 @@ import subprocess
 import argparse
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "scripts"))
-from generate_html_report import generate_html_report  # 👈 assumes it's saved as generate_html_report.py
+from generate_html_report import generate_html_report  
 
 def run_command(command, description, skip_steps, step_key):
     if step_key in skip_steps:
