@@ -8,7 +8,7 @@ from Bio.Blast import NCBIXML
 fasta_file = "data/decoded_embeddiff.fasta"
 output_dir = "data/blast_results"
 csv_output = os.path.join(output_dir, "blast_summary_local.csv")
-blast_db = "/Users/melaku/blastdb/swissprot"  # ✅ Absolute path to your working Swiss-Prot BLAST DB
+blast_db = "/Users/melaku/blastdb/swissprot"  
 os.makedirs(output_dir, exist_ok=True)
 
 # === Parameters ===
