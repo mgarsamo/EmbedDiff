@@ -147,7 +147,6 @@ Generated sequences are validated by aligning them against a **locally downloade
 - Output: A CSV summary with:
   - **Percent identity**
   - **E-value**
-  - **Bit score**
   - **Alignment length**
   - **Matched SwissProt accession/description**
 
