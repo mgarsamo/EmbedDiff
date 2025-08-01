@@ -1,3 +1,4 @@
+#Master script to run the entire pipeline
 import os
 import subprocess
 import argparse
